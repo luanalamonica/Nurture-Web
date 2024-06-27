@@ -1,0 +1,165 @@
+body {
+    color: #ffffff; /* Cor do texto */
+    margin: 0; /* Margem externa */
+    padding: 0; /* Preenchimento interno */
+    background-color: #8ed3d300; /* Cor de fundo */
+    font-size: 14px; /* Tamanho do texto */
+    font-family: Arial, sans-serif; /* Define a fonte para o corpo do documento */
+    background-image: url('../imagens/background1.png');
+    background-size: 100% 100%;
+    }
+
+nav {
+    background-color:#8ed3d300; /* Cor de fundo */
+    padding: 6px 0; /* Preenchimento interno (topo/baixo) */
+    text-align: center; /* Alinhamento do texto */
+}
+
+.logo{
+    width: 180px;
+    height: 16px;
+    cursor: pointer;
+}
+
+nav a {
+    margin: 0 14px; /* Margem à esquerda e à direita */
+    font-size: 15px; /* Tamanho do texto */
+}
+
+section {
+   
+    background-color: #8ed3d300; /* Cor de fundo */
+    text-align: center;
+}
+
+/* Estilo para o botão */
+.botao {
+    background: linear-gradient(15seg,); /* Gradiente de cores */
+    color: rgb(65, 65, 65); /* Cor do texto */
+    padding: 8px 10px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do texto */
+    text-decoration: none; /* Remover sublinhado padrão */
+    display: inline-block; /* Exibição em linha */
+    font-size: 16px; /* Tamanho da fonte */
+    border: none; /* Remover borda */
+    border-radius: 3px; /* Borda arredondada */
+    cursor: pointer; /* Cursor do mouse */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0); /* Sombra sutil */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transição suave */
+}
+
+
+.menu-lateral {
+    width: 40px;
+    height: 100vh; /* Altura ajustada para ocupar a altura total da janela */
+    padding: 10px 0;
+    box-shadow: 3px 0 0 rgba(0, 0, 0, 0); /* Alteração da cor da sombra para transparente */
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: width 0.3s ease; /* Transição de largura para suavizar a animação */
+    background-color: #6797a200;
+}
+
+.menu-lateral:hover {
+    width: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra sutil quando o menu está expandido */
+}
+
+ul {
+    padding-left: 0;
+}
+
+ul li.item-menu {
+    transition: background-color 0.3s; /* Adiciona uma transição suave para a mudança de cor de fundo */
+}
+
+ul li.item-menu:hover {
+    background: rgb(133, 132, 132);
+}
+
+ul li.item-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center; /* Alinha verticalmente o texto com o ícone */
+    margin-bottom: 14px;
+    height: 30px; /* Altura do item do menu */
+}
+
+ul li.item-menu a .txt-link {
+    margin-left: 25px;
+}
+
+.submenu {
+    display: none; /* Oculta o submenu por padrão */
+    background-color: #adadad77; /* Cor de fundo do submenu */
+    padding: 0; /* Remove o preenchimento interno do submenu */
+}
+
+.item-menu:hover .submenu {
+    display: block; /* Mostra o submenu quando o item de menu pai é hover */
+}
+
+.submenu li {
+    margin: 5px 0; /* Espaçamento entre os itens do submenu */
+}
+
+luana {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.grid-container {
+    display: grid;
+    place-items: center;
+    height: 100vh; /* Para centralizar verticalmente */
+}
+
+.login-box {
+    background-color: #ffffff98;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 80px;
+    width: 600px;
+    color: #000000;
+    text-align: center; 
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #a39a9a;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    width: calc(100% - 40px);
+    padding: 11px;
+    margin-bottom: 10px;
+    border: 1px solid #a39a9a;
+    border-radius: 10px;
+}
+
+.login-box input[type="submit"] {
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #f1974d;
+    color: #f4f4f4;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+.login-box input[type="submit"]:hover {
+    background-color: #ec7616;
+}

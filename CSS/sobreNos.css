@@ -1,0 +1,420 @@
+body {
+    color: #ffffff; /* Cor do texto */
+    margin: 0; /* Margem externa */
+    padding: 0; /* Preenchimento interno */
+    background-color: #8ED3D3; /* Cor de fundo */
+    font-size: 14px; /* Tamanho do texto */
+    font-family: Arial, sans-serif; /* Define a fonte para o corpo do documento */
+    }
+
+    .conteudo {
+      background-color: rgba(255, 255, 255, 0.886); /* Cor de fundo da div de conteúdo */
+      padding: 20px; /* Espaçamento interno */
+      margin: 20px auto; /* Margem externa automática para centralizar a div */
+      border-radius: 10px; /* Borda arredondada */
+      width: 100%; /* Largura da div */
+      max-width: 800px; /* Largura máxima da div */
+  }
+
+  .inicio {
+    background-image: url('../imagens/background2.jpg');
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir completamente o elemento */
+    background-position: center; /* Centraliza a imagem no elemento */
+    width: 98,5vw; /* Largura da div igual à largura da janela do navegador */
+    height: 100vh; /* Altura da div igual à altura da janela do navegador */
+    font-family: Arial, sans-serif;
+  }
+  
+h1{
+    font-size: 28px;
+     font-family: "Times New Roman", serif; /* Define a fonte para os títulos */
+}
+
+h4 {
+    font-family: Verdana, sans-serif; /* Define a fonte para os parágrafos */
+}
+nav {
+    background-color: #8ed3d300; /* Cor de fundo */
+    padding: 6px 0; /* Preenchimento interno (topo/baixo) */
+    text-align: center; /* Alinhamento do texto */
+}
+nav img:nth-of-type(2) {
+    margin-left: 500px; /* Adicione a margem esquerda desejada */
+} 
+
+.logo{
+    width: 180px;
+    height: 16px;
+    cursor: pointer;
+}
+
+nav a {
+    margin: 0 14px; /* Margem à esquerda e à direita */
+    font-size: 15px; /* Tamanho do texto */
+}
+
+section {
+  padding: 100px; /* Preenchimento interno */  
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Estilo para o botão */
+.botao {
+    background: linear-gradient(15seg,); /* Gradiente de cores */
+    color: rgb(255, 255, 255); /* Cor do texto */
+    padding: 8px 5px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do texto */
+    text-decoration: none; /* Remover sublinhado padrão */
+    display: inline-block; /* Exibição em linha */
+    font-size: 16px; /* Tamanho da fonte */
+    border: none; /* Remover borda */
+    border-radius: 3px; /* Borda arredondada */
+    cursor: pointer; /* Cursor do mouse */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0); /* Sombra sutil */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transição suave */
+}
+
+/* Efeito de hover */
+.botao:hover {
+    background: linear-gradient(15deg, #729d9e, #729d9e); /* Altera o gradiente ao passar o mouse */
+    transform: translateY(-2px); /* Eleva o botão ligeiramente */
+}
+    
+.menu-lateral {
+    width: 40px;
+    height: 100vh; /* Altura ajustada para ocupar a altura total da janela */
+    padding: 10px 0;
+    box-shadow: 3px 0 0 rgba(0, 0, 0, 0); /* Alteração da cor da sombra para transparente */
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: width 0.3s ease; /* Transição de largura para suavizar a animação */
+    background-color: #6797a200;
+    z-index: 999; /* Define um índice de empilhamento alto */
+  }
+  
+  .menu-lateral:hover {
+    width: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra sutil quando o menu está expandido */
+    background-color: #698b8bb8; /* Define a cor de fundo quando o menu está expandido */
+  }
+  
+  .btn-expandir {
+    width: 100%;
+    padding-left: 0;
+    text-align: center; /* Centraliza o ícone verticalmente */
+  }
+  
+  .btn-expandir > i {
+    color: #ffffff; /* Cor do ícone sempre branca */
+    font-size: 27px;
+    cursor: pointer;
+  }
+
+ul {
+    padding-left: 0;
+}
+
+ul li.item-menu {
+    transition: background-color 0.3s; /* Adiciona uma transição suave para a mudança de cor de fundo */
+}
+
+ul li.item-menu:hover {
+    background: rgba(79, 97, 97, 0.863)
+}
+
+ul li.item-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center; /* Alinha verticalmente o texto com o ícone */
+    margin-bottom: 14px;
+    height: 30px; /* Altura do item do menu */
+}
+
+ul li.item-menu a .txt-link {
+    margin-left: 30px;
+}
+
+.submenu {
+    display: none; /* Oculta o submenu por padrão */
+    background-color: #adadad77; /* Cor de fundo do submenu */
+    padding: 0; /* Remove o preenchimento interno do submenu */
+}
+
+.item-menu:hover .submenu {
+    display: block; /* Mostra o submenu quando o item de menu pai é hover */
+}
+
+.submenu li {
+    margin: 5px 0; /* Espaçamento entre os itens do submenu */
+}
+
+.dropdown {
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  width: 100%;
+  height: 10%;
+  transform: translate(-50%, -50%);
+  background-color: transparent; /* cor de fundo padrão */
+}
+
+.dropdown.scrolled {
+  background-color: #000000bd; /* Altere a cor de fundo quando a tela for rolada */
+  width: 100%;
+  height: 10%;
+  position: fixed; /* Mantém o elemento fixo na tela */
+  z-index: 999; /* Define um índice de empilhamento alto */
+}
+
+.dropdown-content {
+  display: none; /* Oculta o conteúdo por padrão */
+}
+
+.dropdown.scrolled .dropdown-content {
+  display: block; /* Exibe o conteúdo quando o dropdown está no estado "scrolled" */
+}
+
+#logoImage {
+  max-width: 35%; /* Defina a largura máxima da imagem como 50% do contêiner pai */
+  max-height: 35%; /* Defina a altura máxima da imagem como 50% do contêiner pai */
+}
+
+  .dropbtn {
+    background-color: #202c2c;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff94;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #6797a276;
+  }
+
+  .container {
+    color: #ffffff;  
+    text-align: center;
+    margin-right: 10px; /* ajuste a margem conforme necessário */
+    background-color: #51B7BA; /* define o fundo como preto */
+    height: 300px; /* aumenta a altura do container para 300 pixels */
+    width: 100%;
+    transition: background-color 0.3s ease; /* Transição suave na cor de fundo */
+    position: relative; /* Define a posição como relativa para que o z-index funcione */
+    z-index: 9999; /* Define um valor alto para garantir que o container fique acima de todos os outros elementos */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container:hover {
+    background-color: rgb(40, 82, 92); /* Altera a cor de fundo ao passar o mouse sobre o contêiner */
+}
+
+
+.caixa {
+  display: flex; /* Torna o container flexível */
+  z-index: 1; /* Define um valor menor para garantir que a caixa fique abaixo do container */
+}
+
+.caixa > div {
+  flex: 1; /* Faz as divs dentro do container ocuparem o mesmo espaço */
+  padding: 10px; /* Adiciona um espaçamento interno */
+  color: #000000;
+  margin-left: 30px;
+  margin-right: 40px; /* Adiciona um espaçamento entre as divs */
+  background-color: #83b6b500;
+  border-radius: 10px; /* Adiciona bordas arredondadas */
+  height: 450px; /* Ajusta a altura  */
+  margin-top: 45px;
+}
+
+.div1 {
+  width: 30px; /* Ajusta a largura da div1 para 80 pixels */
+  height: 250px; /* Ajusta a altura da div1 para 80 pixels */
+  background-image: url('../imagens/criança2.jpg');
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease; /* Transição suave para o efeito de zoom */
+}
+
+.div1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.3s ease; /* Transição suave para o escurecimento do fundo */
+  opacity: 0; /* Inicialmente invisível */
+}
+
+
+.div1:hover::before {
+  opacity: 1; /* Torna o fundo escuro visível */
+}
+
+.div1:hover {
+  transform: scale(1.1); /* Efeito de zoom */
+}
+
+.texto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease; /* Transição suave para a visibilidade do texto */
+}
+
+.div1:hover .texto {
+  opacity: 1; /* Torna o texto visível ao passar o mouse */
+}
+
+.div2 {
+  width: 100px;
+  height: 100px;
+  background-image: url('../imagens/criança1.jpg');
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease; /* Transição suave para o efeito de zoom */
+}
+
+.div2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.3s ease; /* Transição suave para o escurecimento do fundo */
+  opacity: 0; /* Inicialmente invisível */
+}
+
+.div2:hover::before {
+  opacity: 1; /* Torna o fundo escuro visível */
+}
+
+.div2:hover {
+  transform: scale(1.1); /* Efeito de zoom */
+}
+
+.texto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease; /* Transição suave para a visibilidade do texto */
+}
+
+.div2:hover .texto {
+  opacity: 1; /* Torna o texto visível ao passar o mouse */
+}
+
+.div3 {
+  width: 100px;
+  height: 100px;
+  background-image: url('../imagens/criança3.jpg');
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease; /* Transição suave para o efeito de zoom */
+}
+
+.div3::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.3s ease; /* Transição suave para o escurecimento do fundo */
+  opacity: 0; /* Inicialmente invisível */
+}
+
+.div3:hover::before {
+  opacity: 1; /* Torna o fundo escuro visível */
+}
+
+.div3:hover {
+  transform: scale(1.1); /* Efeito de zoom */
+}
+
+.texto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease; /* Transição suave para a visibilidade do texto */
+}
+
+.div3:hover .texto {
+  opacity: 1; /* Torna o texto visível ao passar o mouse */
+}
+
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0000008c;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.5s ease;
+  transform: translateY(100%);
+}
+
+.cookie-banner.show {
+  transform: translateY(0);
+}
+
+
+#accept-btn {
+  background-color: #5ec3c7;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#accept-btn:hover {
+  background-color: #8ED3D3;
+}

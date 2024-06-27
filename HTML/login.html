@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+    <html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link rel="icon" href="../imagens/logo.png" type="image/png">
+        <link rel="stylesheet" href="../CSS/login.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    </head>
+
+    <body>
+        <p></p>
+
+        <luana class="grid-container">
+            <luana class="login-box">
+                <form id="loginForm" action="../PHP/login.php" method="post">
+                    <nav> 
+                        <img src="../imagens/logo.png" width="82" height="84">
+                    </nav>
+                    <h2>Login</h2>
+                    <input type="text" name="username" placeholder="Email" required>
+                    <input type="password" name="password" placeholder="Password" required><p>
+                    <input type="submit" id="enviar_form" value="Enter"></p>
+                    <a class="botao" href="esqSenha.html">Forgot your password?</a>
+                    <a class="botao" href="criarConta.html">Don't have an account?</a>
+                </form>
+            </luana>
+        </luana>
+        
+        <script src="../JS/login.js"></script>
+        <script>
+            fetch('../PHP/login_check.php')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.logado) {
+                        window.location.href = '../HTML/perfil.html';
+                    }
+                });
+        </script>
+
+    </body>
+
+</html>
