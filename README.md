@@ -43,15 +43,6 @@ A seguir, algumas telas do site:
 - **JavaScript**: Para funcionalidades interativas no site.
 - **Frameworks**: Utilização de frameworks como Bootstrap ou similares para o design responsivo.
 
-## Melhorias Futuras
-
-Para aprimorar a plataforma Nurture, as seguintes melhorias podem ser consideradas:
-
-- **Sistema de Avaliação**: Permitir que as famílias avaliem os Au Pairs após as experiências de cuidado.
-- **Integração com Calendário**: Integrar um sistema de agendamento de atividades para facilitar o planejamento.
-- **Aprimoramento da Plataforma**: Melhorar a performance e otimizar o site para dispositivos móveis.
-- **Adicionar Recursos Educacionais**: Expandir a biblioteca de atividades lúdicas e métodos de ensino.
-
 ## Contribuições
 
 Contribuições são bem-vindas! Sinta-se à vontade para adicionar novas funcionalidades, melhorar o código ou ajustar a interface. Para contribuir:
